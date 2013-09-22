@@ -60,8 +60,6 @@ def run_once():
 def main():
     global exit_flag
     
-    run_once()
-
     sched = Scheduler()
     sched.start()
     sched.add_interval_job(run_once, minutes=FREQUENCE_MINUTES)
